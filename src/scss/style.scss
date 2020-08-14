@@ -1,0 +1,15 @@
+@import './mixins';
+
+@import './fonts';
+body {
+ background-color: black;
+}
+
+.title {
+  color: #FFCBDB;
+  font-size: 250px;
+}
+
+.main {
+  text-align: center;
+}
