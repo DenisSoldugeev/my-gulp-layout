@@ -1,15 +1,44 @@
-@import './mixins';
+// <ПЕРЕМЕННЫЕ>
+@import '_variables';
+// </ПЕРЕМЕННЫЕ>
 
+// <Миксины>
+@import '_mixins.scss';
+// </Миксины>
+
+// <Подключение шрифтов>
 @import './fonts';
-body {
- background-color: black;
-}
+// </Подключение шрифтов>
 
-.title {
-  color: #FFCBDB;
-  font-size: 250px;
-}
+// <Глобальные,повторяющиеся стили>
+@import '_global';
+// </Глобальные,повторяющиеся стили>
 
-.main {
-  text-align: center;
+// <Обнуление стилей>
+@import "./null";
+// </Обнуление стилей>
+
+
+// <Стили шапки сайта>
+@import '_header.scss';
+// </Стили шапки сайта>
+
+
+// <Оболочка>
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
 }
+// </Оболочка>
+
+// <Основная сетка>
+.container {
+  max-width: $maxWidthContainer;
+  padding: 0px 0px;
+  margin: 0 auto;
+}
+// </Основная сетка>
+
+// <Стили Подвала сайта>
+@import '_footer';
+// </Стили Подвала сайта>
